@@ -35,3 +35,69 @@ public static void main(String[] args) {
     }
 }       
 
+
+
+public class Personalprofileprinter {
+
+    public static void main(String[] args) {
+        int age = 19;
+        double height = 1.60;
+        char initial = 'A';
+        boolean isStudent = true;
+        String fullName = "April Love Blanco";
+
+        System.out.println("Personal Profile");
+        System.out.println("Name: " + fullName);
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height + " meters");
+        System.out.println("Initial: " + initial);
+        System.out.println("Student: " + isStudent);
+    }
+}
+    
+
+
+public class TypesafeshoppingCalculator {
+  public static void main(String[] args) {
+        int quantity = 3;
+        double unitPrice = 49.99;
+        String storeName = "ABC Store";
+
+        double totalCost = quantity * unitPrice;
+
+        // totalCost should not be an int because the price may include decimal values.
+        System.out.println("Store Name: " + storeName);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Unit Price: " + unitPrice);
+        System.out.println("Total Cost: " + totalCost);
+
+    }
+}
+
+
+
+public class UnitcastingConverter {
+ public static void main(String[] args) {
+        double centimeters = 275.5;
+
+        int meters = (int) (centimeters / 100);
+        double remainingCm = centimeters % 100;
+
+        System.out.println("Centimeters: " + centimeters);
+        System.out.println("Whole meters: " + meters);
+        System.out.println("Remaining centimeters: " + remainingCm);
+
+        int number = 25;
+        double result = number;
+
+        System.out.println("Implicit widening: " + result);
+
+        double value = 49.99;
+        int convertedValue = (int) value;
+
+        // Casting double to int removes the decimal part.
+        System.out.println("Explicit narrowing: " + convertedValue);
+    }
+}
+   
+
