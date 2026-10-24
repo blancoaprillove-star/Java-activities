@@ -1,0 +1,135 @@
+public class Favoritethingsarray {
+ public static void main(String[] args) {
+
+        String[] favoriteThings = {
+            "Traveling",
+            "Music",
+            "Programming",
+            "Pizza",
+            "Movies"
+        };
+
+        System.out.println("My Favorite Things:");
+
+        for (int i = 0; i < favoriteThings.length; i++) {
+            System.out.println((i + 1) + ". " + favoriteThings[i]);
+        }
+
+        System.out.println("Total number of favorite things: " + favoriteThings.length);
+    }
+}   
+
+
+
+public class Classstaticscalculator {
+public static void main(String[] args) {
+
+        int[] scores = {85, 90, 78, 92, 88, 76, 95, 81};
+
+        int sum = 0;
+        int highest = scores[0];
+        int lowest = scores[0];
+
+        for (int i = 0; i < scores.length; i++) {
+            sum += scores[i];
+
+            if (scores[i] > highest) {
+                highest = scores[i];
+            }
+
+            if (scores[i] < lowest) {
+                lowest = scores[i];
+            }
+        }
+
+        double average = (double) sum / scores.length;
+
+        System.out.println("Class Statistics");
+        System.out.println("---------------");
+        System.out.println("Scores:");
+
+        for (int i = 0; i < scores.length; i++) {
+            System.out.println("Student " + (i + 1) + ": " + scores[i]);
+        }
+
+        System.out.println("\nSum: " + sum);
+        System.out.println("Average: " + average);
+        System.out.println("Highest Score: " + highest);
+        System.out.println("Lowest Score: " + lowest);
+    }
+}
+
+
+
+public class Searchandsortminitool {
+    public static void main(String[] args) {
+        try (Scanner input = new Scanner(System.in)) {
+            int[] scores = {85, 90, 75, 88, 95};
+            
+            System.out.println("Original Scores: " + Arrays.toString(scores));
+            
+            System.out.print("Enter score to search: ");
+            int target = input.nextInt();
+            
+            int index = -1;
+            
+            for (int i = 0; i < scores.length; i++) {
+                if (scores[i] == target) {
+                    index = i;
+                    break;
+                }
+            }
+            
+            if (index != -1) {
+                System.out.println("Score found at index: " + index);
+            } else {
+                System.out.println("Score not found.");
+            }
+            
+            // Sort a copy so the original array stays unchanged.
+            int[] sortedScores = Arrays.copyOf(scores, scores.length);
+            Arrays.sort(sortedScores);
+            
+            System.out.println("Original Array: " + Arrays.toString(scores));
+            System.out.println("Sorted Array: " + Arrays.toString(sortedScores));
+        }
+    }
+ }  
+
+
+
+public class Searchandsortminitool {
+    public static void main(String[] args) {
+        try (Scanner input = new Scanner(System.in)) {
+            int[] scores = {85, 90, 75, 88, 95};
+            
+            System.out.println("Original Scores: " + Arrays.toString(scores));
+            
+            System.out.print("Enter score to search: ");
+            int target = input.nextInt();
+            
+            int index = -1;
+            
+            for (int i = 0; i < scores.length; i++) {
+                if (scores[i] == target) {
+                    index = i;
+                    break;
+                }
+            }
+            
+            if (index != -1) {
+                System.out.println("Score found at index: " + index);
+            } else {
+                System.out.println("Score not found.");
+            }
+            
+            // Sort a copy so the original array stays unchanged.
+            int[] sortedScores = Arrays.copyOf(scores, scores.length);
+            Arrays.sort(sortedScores);
+            
+            System.out.println("Original Array: " + Arrays.toString(scores));
+            System.out.println("Sorted Array: " + Arrays.toString(sortedScores));
+        }
+    }
+ }  
+
